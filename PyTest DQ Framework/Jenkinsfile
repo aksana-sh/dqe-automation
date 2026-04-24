@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        // Load Jenkins credentials (username + password)
         POSTGRES_SECRET = credentials('POSTGRES_SECRET')
     }
 
@@ -37,21 +36,21 @@ pipeline {
                         --self-contained-html
                 """
             }
-        }
 
-        stage('Archive Test Report') {
-            steps {
-                echo "Archiving HTML report..."
+            post {
+                always {
+                    echo "Archiving HTML report..."
 
-                archiveArtifacts artifacts: 'html_report/**', allowEmptyArchive: true
+                    archiveArtifacts artifacts: 'PyTest DQ Framework/html_report/**', allowEmptyArchive: true
 
-                publishHTML(target: [
-                    allowMissing: false,
-                    keepAll: true,
-                    reportDir: 'html_report',
-                    reportFiles: 'report.html',
-                    reportName: 'PyTest DQ HTML Report'
-                ])
+                    publishHTML(target: [
+                        allowMissing: true,
+                        keepAll: true,
+                        reportDir: 'PyTest DQ Framework/html_report',
+                        reportFiles: 'report.html',
+                        reportName: 'PyTest DQ HTML Report'
+                    ])
+                }
             }
         }
     }
@@ -62,3 +61,4 @@ pipeline {
         }
     }
 }
+
