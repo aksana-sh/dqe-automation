@@ -1,5 +1,5 @@
 """
-Description: Data Quality checks for facility_name_min_time_spent_per_visit_date
+Description: Data Quality checks for facility_type_avg_time_spent_per_visit_date
 Requirement(s): DQ Framework based on PyTest
 Author(s): Aksana Shchukina
 """
@@ -7,7 +7,7 @@ Author(s): Aksana Shchukina
 import pytest
 
 
-DATASET = "facility_name_min_time_spent_per_visit_date"
+DATASET = "facility_type_avg_time_spent_per_visit_date"
 
 
 @pytest.mark.parquet_data
@@ -19,14 +19,14 @@ def test_dataset_is_not_empty(target_data, data_quality_library):
 @pytest.mark.parquet_data
 @pytest.mark.parametrize("target_data", [DATASET], indirect=True)
 def test_no_null_values(target_data, data_quality_library):
-    not_null_columns = ["facility_name", "visit_date", "min_time_spent"]
+    not_null_columns = ["facility_type", "visit_date", "avg_time_spent"]
     data_quality_library.check_not_null_values(target_data, not_null_columns)
 
 
 @pytest.mark.parquet_data
 @pytest.mark.parametrize("target_data", [DATASET], indirect=True)
 def test_no_duplicates(target_data, data_quality_library):
-    group_columns = ["facility_name", "visit_date"]
+    group_columns = ["facility_type", "visit_date"]
     data_quality_library.check_duplicates(target_data, group_columns)
 
 

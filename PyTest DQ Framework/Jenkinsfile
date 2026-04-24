@@ -1,0 +1,64 @@
+pipeline {
+    agent any
+
+    environment {
+        // Load Jenkins credentials (username + password)
+        POSTGRES_SECRET = credentials('POSTGRES_SECRET')
+    }
+
+    stages {
+
+        stage('Install Dependencies') {
+            steps {
+                echo "Installing Python dependencies..."
+                sh """
+                    python3 -m venv venv
+                    . venv/bin/activate
+                    pip install --upgrade pip
+                    pip install -r requirements.txt
+                """
+            }
+        }
+
+        stage('Run DQ Tests') {
+            steps {
+                echo "Running Data Quality tests..."
+
+                sh """
+                    . venv/bin/activate
+
+                    pytest tests -m "parquet_data" \
+                        --db_host="postgres" \
+                        --db_port="5432" \
+                        --db_name="mydatabase" \
+                        --db_user="${POSTGRES_SECRET_USR}" \
+                        --db_password="${POSTGRES_SECRET_PSW}" \
+                        --html=html_report/report.html \
+                        --self-contained-html
+                """
+            }
+        }
+
+        stage('Archive Test Report') {
+            steps {
+                echo "Archiving HTML report..."
+
+                archiveArtifacts artifacts: 'html_report/**', allowEmptyArchive: true
+
+                publishHTML(target: [
+                    allowMissing: false,
+                    keepAll: true,
+                    reportDir: 'html_report',
+                    reportFiles: 'report.html',
+                    reportName: 'PyTest DQ HTML Report'
+                ])
+            }
+        }
+    }
+
+    post {
+        always {
+            echo "Pipeline finished. Cleaning up workspace..."
+        }
+    }
+}
