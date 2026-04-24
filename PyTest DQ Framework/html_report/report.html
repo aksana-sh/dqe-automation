@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 24-Apr-2026 at 20:33:43 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.2.0</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</td>
+        </tr>
+      </tbody>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">16 tests took 00:00:28.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" >
+            <span class="failed">8 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" >
+            <span class="passed">8 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled>
+            <span class="rerun">0 Reruns</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="retried" disabled>
+            <span class="retried">0 Retried,</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.10.9&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;9.0.3&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.2.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}, &#34;JAVA_HOME&#34;: &#34;C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.6.10-hotspot\\&#34;}, &#34;tests&#34;: {&#34;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_dataset_is_not_empty[facility_name_min_time_spent_per_visit_date]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_dataset_is_not_empty[facility_name_min_time_spent_per_visit_date]&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_dataset_is_not_empty[facility_name_min_time_spent_per_visit_date]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_no_null_values[facility_name_min_time_spent_per_visit_date]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_no_null_values[facility_name_min_time_spent_per_visit_date]&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_no_null_values[facility_name_min_time_spent_per_visit_date]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_no_duplicates[facility_name_min_time_spent_per_visit_date]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_no_duplicates[facility_name_min_time_spent_per_visit_date]&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_no_duplicates[facility_name_min_time_spent_per_visit_date]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;target_data =              facility_name visit_date  min_time_spent\n0      Richardson and Sons 2000-01-04              35\n1         ...son and Sons 2026-03-09              20\n43590  Richardson and Sons 2026-03-10              41\n\n[43591 rows x 3 columns]\ndata_quality_library = &amp;lt;src.data_quality.data_quality_validation_library.DataQualityLibrary object at 0x000001A26234B4F0&amp;gt;\n\n    @pytest.mark.parquet_data\n    @pytest.mark.parametrize(&amp;quot;target_data&amp;quot;, [DATASET], indirect=True)\n    def test_no_duplicates(target_data, data_quality_library):\n        group_columns = [&amp;quot;facility_name&amp;quot;, &amp;quot;visit_date&amp;quot;]\n&amp;gt;       data_quality_library.check_duplicates(target_data, group_columns)\n\ntests\\dq checks\\parquet_files\\test_facility_name_min_time_spent_per_visit_date.py:30: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndf =              facility_name visit_date  min_time_spent\n0      Richardson and Sons 2000-01-04              35\n1         ...son and Sons 2026-03-09              20\n43590  Richardson and Sons 2026-03-10              41\n\n[43591 rows x 3 columns]\ncolumn_names = [&amp;#x27;facility_name&amp;#x27;, &amp;#x27;visit_date&amp;#x27;]\n\n    @staticmethod\n    def check_duplicates(df: pd.DataFrame, column_names: Optional[list[str]] = None):\n        if column_names:\n            # Validate that all provided columns exist\n            missing_cols = [col for col in column_names if col not in df.columns]\n            assert not missing_cols, (\n                f&amp;quot;The following columns do not exist in the DataFrame: {missing_cols}&amp;quot;\n            )\n    \n            duplicates_df = df[df.duplicated(subset=column_names, keep=False)]\n        else:\n            duplicates_df = df[df.duplicated(keep=False)]\n    \n        if not duplicates_df.empty:\n            preview_df = duplicates_df.head(5)\n&amp;gt;           assert False, f&amp;quot;Duplicate rows found (showing first 5):\\n{preview_df}&amp;quot;\nE           AssertionError: Duplicate rows found (showing first 5):\nE                     facility_name visit_date  min_time_spent\nE           0   Richardson and Sons 2000-01-04              35\nE           2   Richardson and Sons 2000-01-06              41\nE           7   Richardson and Sons 2000-01-22              33\nE           12  Richardson and Sons 2000-01-10              40\nE           13  Richardson and Sons 2000-01-01              27\n\nsrc\\data_quality\\data_quality_validation_library.py:29: AssertionError\n&#34;}], &#34;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_row_count_match[facility_name_min_time_spent_per_visit_date-facility_name_min_time_spent_per_visit_date]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_row_count_match[facility_name_min_time_spent_per_visit_date-facility_name_min_time_spent_per_visit_date]&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_row_count_match[facility_name_min_time_spent_per_visit_date-facility_name_min_time_spent_per_visit_date]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;source_data =       facility_name visit_date  min_time_spent\n0      Barker Group 2000-01-01              58\n1      Barker Group 2000...34886    Wolfe-Sims 2026-03-18              36\n34887    Wolfe-Sims 2026-03-19              16\n\n[34888 rows x 3 columns]\ntarget_data =              facility_name visit_date  min_time_spent\n0      Richardson and Sons 2000-01-04              35\n1         ...son and Sons 2026-03-09              20\n43590  Richardson and Sons 2026-03-10              41\n\n[43591 rows x 3 columns]\ndata_quality_library = &amp;lt;src.data_quality.data_quality_validation_library.DataQualityLibrary object at 0x000001A26234B4F0&amp;gt;\n\n    @pytest.mark.parquet_data\n    @pytest.mark.parametrize(&amp;quot;source_data&amp;quot;, [DATASET], indirect=True)\n    @pytest.mark.parametrize(&amp;quot;target_data&amp;quot;, [DATASET], indirect=True)\n    def test_row_count_match(source_data, target_data, data_quality_library):\n&amp;gt;       data_quality_library.check_count(source_data, target_data)\n\ntests\\dq checks\\parquet_files\\test_facility_name_min_time_spent_per_visit_date.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndf1 =       facility_name visit_date  min_time_spent\n0      Barker Group 2000-01-01              58\n1      Barker Group 2000...34886    Wolfe-Sims 2026-03-18              36\n34887    Wolfe-Sims 2026-03-19              16\n\n[34888 rows x 3 columns]\ndf2 =              facility_name visit_date  min_time_spent\n0      Richardson and Sons 2000-01-04              35\n1         ...son and Sons 2026-03-09              20\n43590  Richardson and Sons 2026-03-10              41\n\n[43591 rows x 3 columns]\n\n    @staticmethod\n    def check_count(df1: pd.DataFrame, df2: pd.DataFrame):\n        if len(df1) != len(df2):\n            diff = len(df1) - len(df2)\n&amp;gt;           assert False, (\n                f&amp;quot;Row count mismatch: source={len(df1)}, target={len(df2)}, diff={diff}&amp;quot;\n            )\nE           AssertionError: Row count mismatch: source=34888, target=43591, diff=-8703\n\nsrc\\data_quality\\data_quality_validation_library.py:35: AssertionError\n&#34;}], &#34;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_full_dataset_match[facility_name_min_time_spent_per_visit_date-facility_name_min_time_spent_per_visit_date]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_full_dataset_match[facility_name_min_time_spent_per_visit_date-facility_name_min_time_spent_per_visit_date]&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_facility_name_min_time_spent_per_visit_date.py::test_full_dataset_match[facility_name_min_time_spent_per_visit_date-facility_name_min_time_spent_per_visit_date]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_dataset_is_not_empty[facility_type_avg_time_spent_per_visit_date]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_dataset_is_not_empty[facility_type_avg_time_spent_per_visit_date]&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_dataset_is_not_empty[facility_type_avg_time_spent_per_visit_date]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_no_null_values[facility_type_avg_time_spent_per_visit_date]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_no_null_values[facility_type_avg_time_spent_per_visit_date]&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_no_null_values[facility_type_avg_time_spent_per_visit_date]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_no_duplicates[facility_type_avg_time_spent_per_visit_date]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_no_duplicates[facility_type_avg_time_spent_per_visit_date]&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_no_duplicates[facility_type_avg_time_spent_per_visit_date]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_row_count_match[facility_type_avg_time_spent_per_visit_date-facility_type_avg_time_spent_per_visit_date]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_row_count_match[facility_type_avg_time_spent_per_visit_date-facility_type_avg_time_spent_per_visit_date]&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_row_count_match[facility_type_avg_time_spent_per_visit_date-facility_type_avg_time_spent_per_visit_date]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;source_data =       facility_type visit_date  avg_time_spent\n0            Clinic 2000-01-01           36.00\n1            Clinic 2000...34886   Urgent Care 2026-03-18           36.00\n34887   Urgent Care 2026-03-19           42.67\n\n[34888 rows x 3 columns]\ntarget_data =           facility_type visit_date  avg_time_spent\n0                Clinic 2000-11-15           34.50\n1               ...pecialty Center 2026-03-11           29.00\n25353            Clinic 2026-03-10           46.50\n\n[25354 rows x 3 columns]\ndata_quality_library = &amp;lt;src.data_quality.data_quality_validation_library.DataQualityLibrary object at 0x000001A26234B4F0&amp;gt;\n\n    @pytest.mark.parquet_data\n    @pytest.mark.parametrize(&amp;quot;source_data&amp;quot;, [DATASET], indirect=True)\n    @pytest.mark.parametrize(&amp;quot;target_data&amp;quot;, [DATASET], indirect=True)\n    def test_row_count_match(source_data, target_data, data_quality_library):\n&amp;gt;       data_quality_library.check_count(source_data, target_data)\n\ntests\\dq checks\\parquet_files\\test_facility_type_avg_time_spent_per_visit_date.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndf1 =       facility_type visit_date  avg_time_spent\n0            Clinic 2000-01-01           36.00\n1            Clinic 2000...34886   Urgent Care 2026-03-18           36.00\n34887   Urgent Care 2026-03-19           42.67\n\n[34888 rows x 3 columns]\ndf2 =           facility_type visit_date  avg_time_spent\n0                Clinic 2000-11-15           34.50\n1               ...pecialty Center 2026-03-11           29.00\n25353            Clinic 2026-03-10           46.50\n\n[25354 rows x 3 columns]\n\n    @staticmethod\n    def check_count(df1: pd.DataFrame, df2: pd.DataFrame):\n        if len(df1) != len(df2):\n            diff = len(df1) - len(df2)\n&amp;gt;           assert False, (\n                f&amp;quot;Row count mismatch: source={len(df1)}, target={len(df2)}, diff={diff}&amp;quot;\n            )\nE           AssertionError: Row count mismatch: source=34888, target=25354, diff=9534\n\nsrc\\data_quality\\data_quality_validation_library.py:35: AssertionError\n&#34;}], &#34;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_full_dataset_match[facility_type_avg_time_spent_per_visit_date-facility_type_avg_time_spent_per_visit_date]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_full_dataset_match[facility_type_avg_time_spent_per_visit_date-facility_type_avg_time_spent_per_visit_date]&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_facility_type_avg_time_spent_per_visit_date.py::test_full_dataset_match[facility_type_avg_time_spent_per_visit_date-facility_type_avg_time_spent_per_visit_date]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;source_data =       facility_type visit_date  avg_time_spent\n0            Clinic 2000-01-01           36.00\n1            Clinic 2000...34886   Urgent Care 2026-03-18           36.00\n34887   Urgent Care 2026-03-19           42.67\n\n[34888 rows x 3 columns]\ntarget_data =           facility_type visit_date  avg_time_spent\n0                Clinic 2000-11-15           34.50\n1               ...pecialty Center 2026-03-11           29.00\n25353            Clinic 2026-03-10           46.50\n\n[25354 rows x 3 columns]\ndata_quality_library = &amp;lt;src.data_quality.data_quality_validation_library.DataQualityLibrary object at 0x000001A26234B4F0&amp;gt;\n\n    @pytest.mark.parquet_data\n    @pytest.mark.parametrize(&amp;quot;source_data&amp;quot;, [DATASET], indirect=True)\n    @pytest.mark.parametrize(&amp;quot;target_data&amp;quot;, [DATASET], indirect=True)\n    def test_full_dataset_match(source_data, target_data, data_quality_library):\n&amp;gt;       data_quality_library.check_data_full_data_set(source_data, target_data)\n\ntests\\dq checks\\parquet_files\\test_facility_type_avg_time_spent_per_visit_date.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndf1 =        avg_time_spent facility_type visit_date                 _hash\n0               36.00        Clinic 2000-01-01   ...18  10448208978116551744\n34887           42.67   Urgent Care 2026-03-19   8134771775290634075\n\n[34888 rows x 4 columns]\ndf2 =        avg_time_spent     facility_type visit_date                 _hash\n0               34.50            Clinic 2000-... 6328175054065132255\n25353           46.50            Clinic 2026-03-10   8296523627366978184\n\n[25354 rows x 4 columns]\n\n    @staticmethod\n    def check_data_full_data_set(df1: pd.DataFrame, df2: pd.DataFrame):\n    \n        # Compare columns (order doesn&amp;#x27;t matter)\n        assert set(df1.columns) == set(df2.columns), (\n            f&amp;quot;Column mismatch:\\nsource={df1.columns}\\ntarget={df2.columns}&amp;quot;\n        )\n    \n        # Ensure same column order\n        df1 = df1[sorted(df1.columns)].copy()\n        df2 = df2[sorted(df2.columns)].copy()\n    \n        # Hash rows for fast comparison\n        df1[&amp;quot;_hash&amp;quot;] = pd.util.hash_pandas_object(df1, index=False)\n        df2[&amp;quot;_hash&amp;quot;] = pd.util.hash_pandas_object(df2, index=False)\n    \n        df1_hashes = df1[&amp;quot;_hash&amp;quot;]\n        df2_hashes = df2[&amp;quot;_hash&amp;quot;]\n    \n        df1_hash_set = set(df1_hashes)\n        df2_hash_set = set(df2_hashes)\n    \n        # Rows in df1 but not in df2\n        df1_only = df1[~df1_hashes.isin(df2_hash_set)].drop(columns=[&amp;quot;_hash&amp;quot;])\n    \n        # Rows in df2 but not in df1\n        df2_only = df2[~df2_hashes.isin(df1_hash_set)].drop(columns=[&amp;quot;_hash&amp;quot;])\n    \n        # Report mismatches\n        msg = []\n        msg.append(&amp;quot;Datasets do NOT match row-by-row.&amp;quot;)\n        msg.append(f&amp;quot;Rows only in source: {len(df1_only)}&amp;quot;)\n        msg.append(f&amp;quot;Rows only in target: {len(df2_only)}&amp;quot;)\n    \n        if not df1_only.empty:\n            msg.append(&amp;quot;Schema:&amp;quot;)\n            msg.append(&amp;quot;\\nExample rows only in source (first 5):&amp;quot;)\n            msg.append(str(df1_only.head(5)))\n    \n        if not df2_only.empty:\n            msg.append(&amp;quot;Schema:&amp;quot;)\n            msg.append(&amp;quot;\\nExample rows only in target (first 5):&amp;quot;)\n            msg.append(str(df2_only.head(5)))\n    \n&amp;gt;       assert df1_only.empty and df2_only.empty, &amp;quot;\\n&amp;quot;.join(msg)\nE       AssertionError: Datasets do NOT match row-by-row.\nE       Rows only in source: 9534\nE       Rows only in target: 0\nE       Schema:\nE       \nE       Example rows only in source (first 5):\nE          avg_time_spent facility_type visit_date\nE       0           36.00        Clinic 2000-01-01\nE       1           35.67        Clinic 2000-01-02\nE       2           37.33        Clinic 2000-01-03\nE       3           35.00        Clinic 2000-01-04\nE       4           54.00        Clinic 2000-01-05\n\nsrc\\data_quality\\data_quality_validation_library.py:83: AssertionError\n&#34;}], &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_dataset_is_not_empty[patient_sum_treatment_cost_per_facility_type]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_dataset_is_not_empty[patient_sum_treatment_cost_per_facility_type]&#34;, &#34;duration&#34;: &#34;22 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_dataset_is_not_empty[patient_sum_treatment_cost_per_facility_type]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;22 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_no_null_values[patient_sum_treatment_cost_per_facility_type]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_no_null_values[patient_sum_treatment_cost_per_facility_type]&#34;, &#34;duration&#34;: &#34;36 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_no_null_values[patient_sum_treatment_cost_per_facility_type]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;36 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;target_data =    facility_type           full_name  sum_treatment_cost\n0         Clinic     Brittany Watson         -1737787.71\n1   ... William Strickland          1641244.24\n63   Urgent Care                None         25893554.93\n\n[64 rows x 3 columns]\ndata_quality_library = &amp;lt;src.data_quality.data_quality_validation_library.DataQualityLibrary object at 0x000001A26234B4F0&amp;gt;\n\n    @pytest.mark.parquet_data\n    @pytest.mark.parametrize(&amp;quot;target_data&amp;quot;, [DATASET], indirect=True)\n    def test_no_null_values(target_data, data_quality_library):\n        not_null_columns = [&amp;quot;facility_type&amp;quot;, &amp;quot;full_name&amp;quot;, &amp;quot;sum_treatment_cost&amp;quot;]\n&amp;gt;       data_quality_library.check_not_null_values(target_data, not_null_columns)\n\ntests\\dq checks\\parquet_files\\test_patient_sum_treatment_cost_per_facility_type.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndf =    facility_type           full_name  sum_treatment_cost\n0         Clinic     Brittany Watson         -1737787.71\n1   ... William Strickland          1641244.24\n63   Urgent Care                None         25893554.93\n\n[64 rows x 3 columns]\ncolumn_names = [&amp;#x27;facility_type&amp;#x27;, &amp;#x27;full_name&amp;#x27;, &amp;#x27;sum_treatment_cost&amp;#x27;]\n\n    @staticmethod\n    def check_not_null_values(df: pd.DataFrame, column_names: Optional[list[str]] = None):\n        if column_names is None:\n            column_names = df.columns\n    \n        # Validate that all provided columns exist\n        missing_cols = [col for col in column_names if col not in df.columns]\n        assert not missing_cols, (\n            f&amp;quot;The following columns do not exist in the DataFrame: {missing_cols}&amp;quot;\n        )\n    \n        # Check nulls\n        for col in column_names:\n            null_df = df[df[col].isnull()]\n            null_count = df[col].isnull().sum()\n&amp;gt;           assert null_count == 0, (\n                f&amp;quot;Column &amp;#x27;{col}&amp;#x27; contains {null_count} NULL values&amp;quot;\n                f&amp;quot;Example rows (first 5): {null_df.head(5)}&amp;quot;\n            )\nE           AssertionError: Column &amp;#x27;full_name&amp;#x27; contains 4 NULL valuesExample rows (first 5):        facility_type full_name  sum_treatment_cost\nE           15            Clinic      None        -25399516.94\nE           31          Hospital      None         25631597.96\nE           47  Specialty Center      None         25859524.38\nE           63       Urgent Care      None         25893554.93\n\nsrc\\data_quality\\data_quality_validation_library.py:104: AssertionError\n&#34;}], &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_no_duplicates[patient_sum_treatment_cost_per_facility_type]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_no_duplicates[patient_sum_treatment_cost_per_facility_type]&#34;, &#34;duration&#34;: &#34;25 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_no_duplicates[patient_sum_treatment_cost_per_facility_type]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;25 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_not_negative[patient_sum_treatment_cost_per_facility_type]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_not_negative[patient_sum_treatment_cost_per_facility_type]&#34;, &#34;duration&#34;: &#34;38 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_not_negative[patient_sum_treatment_cost_per_facility_type]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;38 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;target_data =    facility_type           full_name  sum_treatment_cost\n0         Clinic     Brittany Watson         -1737787.71\n1   ... William Strickland          1641244.24\n63   Urgent Care                None         25893554.93\n\n[64 rows x 3 columns]\ndata_quality_library = &amp;lt;src.data_quality.data_quality_validation_library.DataQualityLibrary object at 0x000001A26234B4F0&amp;gt;\n\n    @pytest.mark.parquet_data\n    @pytest.mark.parametrize(&amp;quot;target_data&amp;quot;, [DATASET], indirect=True)\n    def test_not_negative(target_data, data_quality_library):\n&amp;gt;       data_quality_library.check_not_negative(target_data, [&amp;quot;sum_treatment_cost&amp;quot;])\n\ntests\\dq checks\\parquet_files\\test_patient_sum_treatment_cost_per_facility_type.py:36: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndf =    facility_type           full_name  sum_treatment_cost\n0         Clinic     Brittany Watson         -1737787.71\n1   ... William Strickland          1641244.24\n63   Urgent Care                None         25893554.93\n\n[64 rows x 3 columns]\ncolumn_names = [&amp;#x27;sum_treatment_cost&amp;#x27;]\n\n    @staticmethod\n    def check_not_negative(df: pd.DataFrame, column_names: list[str]):\n    \n        # Validate that all provided columns exist\n        missing_cols = [col for col in column_names if col not in df.columns]\n        assert not missing_cols, (\n            f&amp;quot;The following columns do not exist in the DataFrame: {missing_cols}&amp;quot;\n        )\n    \n        # Check each column for negative values\n        for col in column_names:\n            negative_rows = df[df[col] &amp;lt; 0]\n    \n            if not negative_rows.empty:\n&amp;gt;               assert False, (\n                    f&amp;quot;Column &amp;#x27;{col}&amp;#x27; contains negative values.\\n&amp;quot;\n                    f&amp;quot;Count: {len(negative_rows)}\\n&amp;quot;\n                    f&amp;quot;Example rows (first 5):\\n{negative_rows.head(5)}&amp;quot;\n                )\nE               AssertionError: Column &amp;#x27;sum_treatment_cost&amp;#x27; contains negative values.\nE               Count: 16\nE               Example rows (first 5):\nE                 facility_type        full_name  sum_treatment_cost\nE               0        Clinic  Brittany Watson         -1737787.71\nE               1        Clinic     Dylan Juarez         -1741609.60\nE               2        Clinic     Eric Daniels         -1873296.96\nE               3        Clinic     Glenda Lopez         -1767885.30\nE               4        Clinic      Jenny Klein         -1655658.58\n\nsrc\\data_quality\\data_quality_validation_library.py:123: AssertionError\n&#34;}], &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_row_count_match[patient_sum_treatment_cost_per_facility_type-patient_sum_treatment_cost_per_facility_type]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_row_count_match[patient_sum_treatment_cost_per_facility_type-patient_sum_treatment_cost_per_facility_type]&#34;, &#34;duration&#34;: &#34;315 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_row_count_match[patient_sum_treatment_cost_per_facility_type-patient_sum_treatment_cost_per_facility_type]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;315 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;source_data =     facility_type           full_name sum_treatment_cost\n0          Clinic       Amanda Bishop         1848202.07\n1   ...      Tara Espinoza         1581404.25\n119   Urgent Care  William Strickland         1641244.24\n\n[120 rows x 3 columns]\ntarget_data =    facility_type           full_name  sum_treatment_cost\n0         Clinic     Brittany Watson         -1737787.71\n1   ... William Strickland          1641244.24\n63   Urgent Care                None         25893554.93\n\n[64 rows x 3 columns]\ndata_quality_library = &amp;lt;src.data_quality.data_quality_validation_library.DataQualityLibrary object at 0x000001A26234B4F0&amp;gt;\n\n    @pytest.mark.parquet_data\n    @pytest.mark.parametrize(&amp;quot;source_data&amp;quot;, [DATASET], indirect=True)\n    @pytest.mark.parametrize(&amp;quot;target_data&amp;quot;, [DATASET], indirect=True)\n    def test_row_count_match(source_data, target_data, data_quality_library):\n&amp;gt;       data_quality_library.check_count(source_data, target_data)\n\ntests\\dq checks\\parquet_files\\test_patient_sum_treatment_cost_per_facility_type.py:43: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndf1 =     facility_type           full_name sum_treatment_cost\n0          Clinic       Amanda Bishop         1848202.07\n1   ...      Tara Espinoza         1581404.25\n119   Urgent Care  William Strickland         1641244.24\n\n[120 rows x 3 columns]\ndf2 =    facility_type           full_name  sum_treatment_cost\n0         Clinic     Brittany Watson         -1737787.71\n1   ... William Strickland          1641244.24\n63   Urgent Care                None         25893554.93\n\n[64 rows x 3 columns]\n\n    @staticmethod\n    def check_count(df1: pd.DataFrame, df2: pd.DataFrame):\n        if len(df1) != len(df2):\n            diff = len(df1) - len(df2)\n&amp;gt;           assert False, (\n                f&amp;quot;Row count mismatch: source={len(df1)}, target={len(df2)}, diff={diff}&amp;quot;\n            )\nE           AssertionError: Row count mismatch: source=120, target=64, diff=56\n\nsrc\\data_quality\\data_quality_validation_library.py:35: AssertionError\n&#34;}], &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_full_dataset_match[patient_sum_treatment_cost_per_facility_type-patient_sum_treatment_cost_per_facility_type]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_full_dataset_match[patient_sum_treatment_cost_per_facility_type-patient_sum_treatment_cost_per_facility_type]&#34;, &#34;duration&#34;: &#34;361 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;dq checks/parquet_files/test_patient_sum_treatment_cost_per_facility_type.py::test_full_dataset_match[patient_sum_treatment_cost_per_facility_type-patient_sum_treatment_cost_per_facility_type]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;361 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;source_data =     facility_type           full_name sum_treatment_cost\n0          Clinic       Amanda Bishop         1848202.07\n1   ...      Tara Espinoza         1581404.25\n119   Urgent Care  William Strickland         1641244.24\n\n[120 rows x 3 columns]\ntarget_data =    facility_type           full_name  sum_treatment_cost\n0         Clinic     Brittany Watson         -1737787.71\n1   ... William Strickland          1641244.24\n63   Urgent Care                None         25893554.93\n\n[64 rows x 3 columns]\ndata_quality_library = &amp;lt;src.data_quality.data_quality_validation_library.DataQualityLibrary object at 0x000001A26234B4F0&amp;gt;\n\n    @pytest.mark.parquet_data\n    @pytest.mark.parametrize(&amp;quot;source_data&amp;quot;, [DATASET], indirect=True)\n    @pytest.mark.parametrize(&amp;quot;target_data&amp;quot;, [DATASET], indirect=True)\n    def test_full_dataset_match(source_data, target_data, data_quality_library):\n&amp;gt;       data_quality_library.check_data_full_data_set(source_data, target_data)\n\ntests\\dq checks\\parquet_files\\test_patient_sum_treatment_cost_per_facility_type.py:50: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndf1 =     facility_type           full_name sum_treatment_cost                 _hash\n0          Clinic       Amanda Bishop  ...1621425263726685\n119   Urgent Care  William Strickland         1641244.24  12912217506104267885\n\n[120 rows x 4 columns]\ndf2 =    facility_type           full_name  sum_treatment_cost                 _hash\n0         Clinic     Brittany Watson   ...50516784020306079\n63   Urgent Care                None         25893554.93   4558100139995973951\n\n[64 rows x 4 columns]\n\n    @staticmethod\n    def check_data_full_data_set(df1: pd.DataFrame, df2: pd.DataFrame):\n    \n        # Compare columns (order doesn&amp;#x27;t matter)\n        assert set(df1.columns) == set(df2.columns), (\n            f&amp;quot;Column mismatch:\\nsource={df1.columns}\\ntarget={df2.columns}&amp;quot;\n        )\n    \n        # Ensure same column order\n        df1 = df1[sorted(df1.columns)].copy()\n        df2 = df2[sorted(df2.columns)].copy()\n    \n        # Hash rows for fast comparison\n        df1[&amp;quot;_hash&amp;quot;] = pd.util.hash_pandas_object(df1, index=False)\n        df2[&amp;quot;_hash&amp;quot;] = pd.util.hash_pandas_object(df2, index=False)\n    \n        df1_hashes = df1[&amp;quot;_hash&amp;quot;]\n        df2_hashes = df2[&amp;quot;_hash&amp;quot;]\n    \n        df1_hash_set = set(df1_hashes)\n        df2_hash_set = set(df2_hashes)\n    \n        # Rows in df1 but not in df2\n        df1_only = df1[~df1_hashes.isin(df2_hash_set)].drop(columns=[&amp;quot;_hash&amp;quot;])\n    \n        # Rows in df2 but not in df1\n        df2_only = df2[~df2_hashes.isin(df1_hash_set)].drop(columns=[&amp;quot;_hash&amp;quot;])\n    \n        # Report mismatches\n        msg = []\n        msg.append(&amp;quot;Datasets do NOT match row-by-row.&amp;quot;)\n        msg.append(f&amp;quot;Rows only in source: {len(df1_only)}&amp;quot;)\n        msg.append(f&amp;quot;Rows only in target: {len(df2_only)}&amp;quot;)\n    \n        if not df1_only.empty:\n            msg.append(&amp;quot;Schema:&amp;quot;)\n            msg.append(&amp;quot;\\nExample rows only in source (first 5):&amp;quot;)\n            msg.append(str(df1_only.head(5)))\n    \n        if not df2_only.empty:\n            msg.append(&amp;quot;Schema:&amp;quot;)\n            msg.append(&amp;quot;\\nExample rows only in target (first 5):&amp;quot;)\n            msg.append(str(df2_only.head(5)))\n    \n&amp;gt;       assert df1_only.empty and df2_only.empty, &amp;quot;\\n&amp;quot;.join(msg)\nE       AssertionError: Datasets do NOT match row-by-row.\nE       Rows only in source: 120\nE       Rows only in target: 64\nE       Schema:\nE       \nE       Example rows only in source (first 5):\nE         facility_type          full_name sum_treatment_cost\nE       0        Clinic      Amanda Bishop         1848202.07\nE       1        Clinic  Annette Rodriguez         1606457.04\nE       2        Clinic     Anthony Arnold         1695830.27\nE       3        Clinic     Anthony Peters         1629020.38\nE       4        Clinic       Ashley Smith         1579335.09\nE       Schema:\nE       \nE       Example rows only in target (first 5):\nE         facility_type        full_name  sum_treatment_cost\nE       0        Clinic  Brittany Watson         -1737787.71\nE       1        Clinic     Dylan Juarez         -1741609.60\nE       2        Clinic     Eric Daniels         -1873296.96\nE       3        Clinic     Glenda Lopez         -1767885.30\nE       4        Clinic      Jenny Klein         -1655658.58\n\nsrc\\data_quality\\data_quality_validation_library.py:83: AssertionError\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+  </body>
+</html>
