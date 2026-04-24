@@ -11,12 +11,15 @@ DATASET = "facility_name_min_time_spent_per_visit_date"
 
 
 @pytest.mark.parquet_data
+@pytest.mark.facility_name_min_time_spent_per_visit_date
+@pytest.mark.smoke
 @pytest.mark.parametrize("target_data", [DATASET], indirect=True)
 def test_dataset_is_not_empty(target_data, data_quality_library):
     data_quality_library.check_dataset_is_not_empty(target_data)
 
 
 @pytest.mark.parquet_data
+@pytest.mark.facility_name_min_time_spent_per_visit_date
 @pytest.mark.parametrize("target_data", [DATASET], indirect=True)
 def test_no_null_values(target_data, data_quality_library):
     not_null_columns = ["facility_name", "visit_date", "min_time_spent"]
@@ -24,6 +27,7 @@ def test_no_null_values(target_data, data_quality_library):
 
 
 @pytest.mark.parquet_data
+@pytest.mark.facility_name_min_time_spent_per_visit_date
 @pytest.mark.parametrize("target_data", [DATASET], indirect=True)
 def test_no_duplicates(target_data, data_quality_library):
     group_columns = ["facility_name", "visit_date"]
@@ -31,6 +35,7 @@ def test_no_duplicates(target_data, data_quality_library):
 
 
 @pytest.mark.parquet_data
+@pytest.mark.facility_name_min_time_spent_per_visit_date
 @pytest.mark.parametrize("source_data", [DATASET], indirect=True)
 @pytest.mark.parametrize("target_data", [DATASET], indirect=True)
 def test_row_count_match(source_data, target_data, data_quality_library):
@@ -38,6 +43,7 @@ def test_row_count_match(source_data, target_data, data_quality_library):
 
 
 @pytest.mark.parquet_data
+@pytest.mark.facility_name_min_time_spent_per_visit_date
 @pytest.mark.parametrize("source_data", [DATASET], indirect=True)
 @pytest.mark.parametrize("target_data", [DATASET], indirect=True)
 def test_full_dataset_match(source_data, target_data, data_quality_library):

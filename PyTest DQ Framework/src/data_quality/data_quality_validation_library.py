@@ -71,12 +71,10 @@ class DataQualityLibrary:
         msg.append(f"Rows only in target: {len(df2_only)}")
 
         if not df1_only.empty:
-            msg.append("Schema:")
             msg.append("\nExample rows only in source (first 5):")
             msg.append(str(df1_only.head(5)))
 
         if not df2_only.empty:
-            msg.append("Schema:")
             msg.append("\nExample rows only in target (first 5):")
             msg.append(str(df2_only.head(5)))
 
